@@ -18,7 +18,7 @@ class Post
     if !self.author
       return nil 
     else
-      self.author.name = @author
+      self.author.name = @author.name
     end
   end
   
