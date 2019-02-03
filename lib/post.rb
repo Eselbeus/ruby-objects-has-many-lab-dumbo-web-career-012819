@@ -14,9 +14,12 @@ class Post
     @@all
   end
   
-  def author(pst) 
-    pst.author = @author
-    
+  def author_name
+    if !self.author
+      return nil 
+    else
+      self.author.name = @author
+    end
   end
   
   
