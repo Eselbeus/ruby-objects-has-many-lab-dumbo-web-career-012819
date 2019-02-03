@@ -11,6 +11,7 @@ class Author
     @name = name
     @posts = []
     
+    @@all << self
   end
   
   def add_post(pst)
